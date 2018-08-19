@@ -1,0 +1,425 @@
+<html lang="en" class=" ">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Meta, title, CSS, favicons, etc. -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Supply Tracking</title>
+
+
+
+  <!-- Bootstrap -->
+  <link href="./vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="./vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <!-- NProgress -->
+  <link href="./vendors/nprogress/nprogress.css" rel="stylesheet">
+  <!-- iCheck -->
+  <link href="./vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+  <!-- bootstrap-wysiwyg -->
+  <link href="./vendors/google-code-prettify/bin/prettify.min.css" rel="stylesheet">
+  <!-- Select2 -->
+  <link href="./vendors/select2/dist/css/select2.min.css" rel="stylesheet">
+  <!-- Switchery -->
+  <link href="./vendors/switchery/dist/switchery.min.css" rel="stylesheet">
+  <!-- starrr -->
+  <link href="./vendors/starrr/dist/starrr.css" rel="stylesheet">
+  <!-- bootstrap-daterangepicker -->
+  <link href="./vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+
+  <!-- Custom Theme Style -->
+  <link href="./build/css/custom.min.css" rel="stylesheet">
+  <!-- Custom Theme Style -->
+  <link href="./build/css/custom.min.css" rel="stylesheet">
+
+  <!-- PNotify -->
+  <link href="../vendors/pnotify/dist/pnotify.css" rel="stylesheet">
+  <link href="../vendors/pnotify/dist/pnotify.buttons.css" rel="stylesheet">
+  <link href="../vendors/pnotify/dist/pnotify.nonblock.css" rel="stylesheet">
+
+
+  <!--JQuery Script-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/jquery/jquery.js"></script>
+  <script src="vendor/jquery/jquery.min.map"></script>
+  <script src="vendor/jquery/jquery.slim.js"></script>
+  <script src="vendor/jquery/jquery.slim.min.js"></script>
+  <script src="vendor/jquery/jquery.slim.min.map"></script>
+
+  <!-- Main Javascript file-->
+  <script src="js/index.js"></script>
+
+</head>
+
+<body class="nav-md">
+  <div class="container body">
+    <div class="main_container">
+      <div class="col-md-3 left_col">
+        <div class="left_col scroll-view">
+          <div class="navbar nav_title" style="border: 0;">
+            <a href="Main.html" class="site_title">
+              <i class="fa fa-paw"></i>
+              <span>Supply Tracking</span>
+            </a>
+          </div>
+
+          <div class="clearfix"></div>
+
+          <br>
+          <!-- sidebar menu -->
+          <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+            <div class="menu_section active">
+              <h3>General</h3>
+              <ul class="nav side-menu" style="">
+                <li class="">
+                  <a>
+                    <i class="fa fa-home"></i>Farmer
+                    <span class="fa fa-chevron-down"></span>
+                  </a>
+                  <ul class="nav child_menu" style="display: none;">
+                    <li class="current-page">
+                      <a id="CreateFarmerProfile" href="CreateFarmerProfile.html">Create Farmer Profile</a>
+                    </li>
+                    <li class="current-page">
+                      <a id="EditFarmerProfile" href="EditFarmerProfile.html">Edit Farmer Profile</a>
+                    </li>
+                    <li class="current-page">
+                      <a id="Blockchain" href="BlockchainFarmer.html">Blockchain</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="">
+                  <a>
+                    <i class="fa fa-edit"></i> Harvest
+                    <span class="fa fa-chevron-down"></span>
+                  </a>
+                  <ul class="nav child_menu" style="display: none;">
+                    <li class="current-page">
+                      <a id="CreateHarvest" href="CreateHarvest.html">Create Harvest</a>
+                    </li>
+                    <li class="current-page">
+                      <a id="ViewHarvest" href="ViewHarvest.html">View Harvest</a>
+                    </li>
+                    <li class="current-page">
+                      <a id="Blockchain" href="BlockchainHarvest.html">Blockchain</a>
+                    </li>
+
+                  </ul>
+                </li>
+                <li class="">
+                  <a>
+                    <i class="fa fa-edit"></i> Lab
+                    <span class="fa fa-chevron-down"></span>
+                  </a>
+                  <ul class="nav child_menu" style="display: none;">
+                    <li class="current-page">
+                      <a id="CreateLab" href="CreateLab.html">Create Lab</a>
+                    </li>
+                    <li class="current-page">
+                      <a id="ViewLab" href="ViewLab.html">View Lab data</a>
+                    </li>
+                    <li class="current-page">
+                      <a id="Blockchain" href="BlockchainLab.html">Blockchain</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="">
+                  <a>
+                    <i class="fa fa-edit"></i> Expertise
+                    <span class="fa fa-chevron-down"></span>
+                  </a>
+                  <ul class="nav child_menu" style="display: none;">
+                    <li class="current-page">
+                      <a id="CreateExpertise" href="CreateExpertise.html">Create Expertise</a>
+                    </li>
+                    <li class="current-page">
+                      <a id="ViewExpertiseData" href="ViewExpertiseData.html">View Expertise data</a>
+                    </li>
+                    <li class="current-page">
+                      <a id="Blockchain" href="BlockchainExpertise.html">Blockchain</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="">
+                  <a>
+                    <i class="fa fa-edit"></i> Data Recovery
+                    <span class="fa fa-chevron-down"></span>
+                  </a>
+                  <ul class="nav child_menu" style="display: none;">
+                    <li class="current-page">
+                      <a id="DeleteData" href="DeleteData.html">Delete data from SmartContract</a>
+                    </li>
+                    <li class="current-page">
+                      <a id="RecoverData" href="RecoverData.html">Recover Data from Blockchain</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- /sidebar menu -->
+
+          <!-- /menu footer buttons -->
+          <div class="sidebar-footer hidden-small">
+            <a data-toggle="tooltip" data-placement="top" title="" data-original-title="Settings">
+              <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+            </a>
+            <a data-toggle="tooltip" data-placement="top" title="" data-original-title="FullScreen">
+              <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+            </a>
+            <a data-toggle="tooltip" data-placement="top" title="" data-original-title="Lock">
+              <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+            </a>
+            <a data-toggle="tooltip" data-placement="top" title="" href="Main.html" data-original-title="Logout">
+              <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+            </a>
+          </div>
+          <!-- /menu footer buttons -->
+        </div>
+      </div>
+
+      <!-- top navigation -->
+      <div class="top_nav">
+        <div class="nav_menu">
+          <nav>
+            <div class="nav toggle">
+              <a id="menu_toggle">
+                <i class="fa fa-bars"></i>
+              </a>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <!-- /top navigation -->
+
+      <!-- page content -->
+      <div class="right_col" role="main" style="min-height: 530px;">
+        <div class="">
+          <div class="page-title">
+            <div class="title_left">
+              <h3>Information</h3>
+            </div>
+          </div>
+          <div class="title_right">
+          </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="x_panel">
+              <div class="x_title">
+                <ul class="nav navbar-right panel_toolbox">
+                  <li>
+                    <a class="collapse-link">
+                      <i class="fa fa-chevron-up"></i>
+                    </a>
+                  </li>
+                </ul>
+                <div class="clearfix"></div>
+              </div>
+              <div class="x_content">
+                <div class="row">
+                  <form class="form-horizontal form-label-left" novalidate>
+
+                    </p>
+                    <span class="section">Harvest Details </span>
+
+                    <div class="item form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Strain Harvest
+                        <span class="required">*</span>
+                      </label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input id="StrainHarvest" class="form-control col-md-7 col-xs-12" data-validate-length-range="6" data-validate-words="2"
+                          name="name" placeholder="Name of harvest" required="required" type="text">
+                      </div>
+                    </div>
+                    <div class="item form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="email">Number of Plants
+                        <span class="required">*</span>
+                      </label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input type="number" placeholder="In (Kgs)" id="PlantCount" name="PlantCount" required="required" class="form-control col-md-7 col-xs-12">
+                      </div>
+                    </div>
+                    <div class="item form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="website">Weight Measurement
+                        <span class="required">*</span>
+                      </label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input placeholder="In (Kgs)" type="number" id="weight" name="weight" required="required" class="form-control col-md-7 col-xs-12">
+                      </div>
+                    </div>
+                    <div class="item form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="website">Wet Plant
+                        <span class="required">*</span>
+                      </label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input type="number" placeholder="In (Kgs)" id="wetPlant" name="wetPlant" required="required" class="form-control col-md-7 col-xs-12">
+                      </div>
+                    </div>
+
+                    <div class="item form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="website">Wet Trim
+                        <span class="required">*</span>
+                      </label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input type="number" id="wetTrim" name="wetTrim" placeholder="In (Kgs)" required="required" class="form-control col-md-7 col-xs-12">
+                      </div>
+                    </div>
+
+                    <div class="item form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="website">Wet Flower
+                        <span class="required">*</span>
+                      </label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input type="number" placeholder="In (Kgs)" id="wetFlower" name="wetFlower" required="required" class="form-control col-md-7 col-xs-12">
+                      </div>
+                    </div>
+
+                    <div class="item form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="website">Dry Trim
+                        <span class="required">*</span>
+                      </label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input type="number" id="dryTrim" name="dryTrim" placeholder="In (Kgs)" required="required" class="form-control col-md-7 col-xs-12">
+                      </div>
+                    </div>
+
+                    <div class="item form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="website">Dry Flower
+                        <span class="required">*</span>
+                      </label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input type="number" id="dryFlower" placeholder="In (Kgs)" name="dryFlower" required="required" class="form-control col-md-7 col-xs-12">
+                      </div>
+                    </div>
+
+                    <div class="item form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="website">Seeds
+                        <span class="required">*</span>
+                      </label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input placeholder="In (Kgs)" type="number" id="seeds" name="seeds" required="required" class="form-control col-md-7 col-xs-12">
+                      </div>
+                    </div>
+
+                    <div class="item form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="website">Total Usable Flower
+                        <span class="required">*</span>
+                      </label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input type="number" id="TotalUsable" name="TotalUsable" required="required" class="form-control col-md-7 col-xs-12" placeholder="In (Kgs)">
+                      </div>
+                    </div>
+
+                    <div class="item form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="website">Total Unsable Trim
+                        <span class="required">*</span>
+                      </label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input type="number" id="TotalUnusable" name="TotalUnusable" placeholder="In (Kgs)" required="required" class="form-control col-md-7 col-xs-12">
+                      </div>
+                    </div>
+
+                    <div class="ln_solid"></div>
+                    <div class="form-group">
+                      <div class="col-md-6 col-md-offset-3">
+                        <button id="sendHarvest" type="submit" class="btn btn-success">Submit</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Modal Start-->
+      <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">
+                <span aria-hidden="true">×</span>
+              </button>
+              <h4 class="modal-title" id="myModalLabel">Transaction Recipt</h4>
+            </div>
+            <div class="modal-body">
+              <p id="ReciptAppender"></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!--Modal End-->
+
+      <!-- /page content -->
+
+      <!-- footer content -->
+      <footer>
+        <div class="pull-right">
+          Supply Tracking
+          <a href="Main.html"></a>
+        </div>
+        <div class="clearfix"></div>
+      </footer>
+      <!-- /footer content -->
+    </div>
+
+
+    <!-- jQuery -->
+    <script src="./vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="./vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="./vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="./vendors/nprogress/nprogress.js"></script>
+    <!-- Chart.js -->
+    <script src="./vendors/Chart.js/dist/Chart.min.js"></script>
+    <!-- gauge.js -->
+    <script src="./vendors/gauge.js/dist/gauge.min.js"></script>
+    <!-- bootstrap-progressbar -->
+    <script src="./vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+    <!-- iCheck -->
+    <script src="./vendors/iCheck/icheck.min.js"></script>
+    <!-- Skycons -->
+    <script src="./vendors/skycons/skycons.js"></script>
+    <!-- Flot -->
+    <script src="./vendors/Flot/jquery.flot.js"></script>
+    <script src="./vendors/Flot/jquery.flot.pie.js"></script>
+    <script src="./vendors/Flot/jquery.flot.time.js"></script>
+    <script src="./vendors/Flot/jquery.flot.stack.js"></script>
+    <script src="./vendors/Flot/jquery.flot.resize.js"></script>
+    <!-- Flot plugins -->
+    <script src="./vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
+    <script src="./vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
+    <script src="./vendors/flot.curvedlines/curvedLines.js"></script>
+    <!-- DateJS -->
+    <script src="./vendors/DateJS/build/date.js"></script>
+    <!-- JQVMap -->
+    <script src="./vendors/jqvmap/dist/jquery.vmap.js"></script>
+    <script src="./vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+    <script src="./vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="./vendors/moment/min/moment.min.js"></script>
+    <script src="./vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="./build/js/custom.min.js"></script>
+
+
+
+</body>
+
+</html>

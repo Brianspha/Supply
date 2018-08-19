@@ -1,0 +1,36 @@
+{
+  "contracts": ["contracts/**"],
+  "app": {
+    "css/app.css": ["app/css/**"],
+    "js/index.js": ["app/js/index.js"],
+    "login.html": "app/login.html",
+    "Main.html": "app/Main.html",
+    "js/TransactionHistory.js": ["app/js/TransactionHistory.js"],
+    "BlockchainExpertise.html": "app/BlockchainExpertise.html",
+    "BlockchainFarmer.html": "app/BlockchainFarmer.html",
+    "BlockchainHarvest.html": "app/BlockchainHarvest.html",
+    "BlockchainLab.html": "app/BlockchainLab.html",
+    "CreateExpertise.html": "app/CreateExpertise.html",
+    "CreateHarvest.html": "app/CreateHarvest.html",
+    "CreateLab.html": "app/CreateLab.html",
+    "DataIntergrity.html": "app/DataIntergrity.html",
+    "FarmerHackData.html": "app/FarmerHackData.html",
+    "FarmerProfile.html": "app/FarmerProfile.html",
+    "ViewExpertiseData.html": "app/ViewExpertiseData.html",
+    "ViewHarvest.html": "app/ViewHarvest.html",
+    "ViewLab.html": "app/ViewLab.html",
+    "CreateFarmerProfile.html": "app/CreateFarmerProfile.html",
+    "DeleteData.html": "app/DeleteData.html",
+    "RecoverData.html": "app/RecoverData.html",
+    "EditFarmerProfile.html": "app/EditFarmerProfile.html"
+  },
+  "buildDir": "dist/",
+  "config": "config/",
+  "versions": {
+    "web3": "1.0.0-beta",
+    "ipfs-api": "17.2.4",
+    "solc": "0.4.24",
+    "p-iteration": "1.1.7"
+  },
+  "plugins": {}
+}

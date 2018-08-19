@@ -1,0 +1,55 @@
+import Farmer from 'Embark/contracts/Farmer';
+import Grower from 'Embark/contracts/Grower';
+import Lab from 'Embark/contracts/Lab';
+import Expertise from 'Embark/contracts/Expertise';
+import RawMaterial from 'Embark/contracts/RawMaterial';
+import $ from 'jquery';
+import EmbarkJS from 'Embark/EmbarkJS';
+import async from 'async';
+EmbarkJS.onReady(() => {
+  $(document).ready(() => {
+    // @Dev invoked when the send  button is clicked under the creaet farmer profile page
+    $('#sendProfile').click((e) => {
+      const name = document.getElementById('name').value;
+      const lname = document.getElementById('lname').value;
+      const email = document.getElementById('email').value;
+      const address = document.getElementById('location').value;
+      const pass = document.getElementById('password').value;
+      const pass2 = document.getElementById('password2').value;
+      if (pass != pass2) {
+        alert('Passwords dont match please try again!');
+        return;
+      }
+      web3.eth.getAccounts().then((e) => {
+        const acc = e[0];
+        const results = Farmer.methods.AddNewFarmer(name, lname, email, address, pass).send({
+          from: acc.toString(),
+          gas: 4000000,
+        }).then((val, err) => {
+          if (err) {
+            alert(`Something went wrong: ${err}`);
+          } else {
+            outputTransactionRecipt(val);
+          }
+        });
+        return false;
+      });
+      return false;
+    });
+
+    
+
+  
+
+    
+    
+    
+   
+   
+   
+    // @Dev Page Click End
+
+
+  
+  
+});
